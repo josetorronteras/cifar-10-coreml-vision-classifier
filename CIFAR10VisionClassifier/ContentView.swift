@@ -73,7 +73,13 @@ struct ContentView: View {
                         classification.updateClassifications(for: image)
                     }
                 }, content: {
-                    ImagePicker(image: $image, sourceType: self.sourceType)
+                    if sourceType == .photoLibrary {
+                        PhotoPicker(image: $image)
+                            .edgesIgnoringSafeArea(.all)
+                    } else {
+                        ImagePicker(image: $image)
+                            .edgesIgnoringSafeArea(.all)
+                    }
                 })
             }
         }
