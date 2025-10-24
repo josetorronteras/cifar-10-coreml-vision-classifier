@@ -1,4 +1,4 @@
-# CIFAR10VISIONCLASSIFIER
+# CIFAR-10 CoreML Vision Classifier
 
 ## Table of Contents
 - [Introduction](#introduction)
